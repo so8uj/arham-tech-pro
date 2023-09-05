@@ -35,7 +35,7 @@ body {
 
 /* Bootstrap Modify CSS */
 .container-fluid{
-    padding: 0px 35px;
+    padding: 0px 50px;
 }
 
 
@@ -437,6 +437,7 @@ body {
 .portfolio{
     padding: 30px 0px;
     background: #000;
+    position: relative;
     color: #fff;
 }
 
@@ -445,6 +446,10 @@ body {
     font-weight: bold;
     text-align: center;
     margin-bottom: 50px;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    width: 100%;
 }
 .slider-image img{
     width: 100%;
@@ -473,4 +478,27 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
-
+.slider-section {
+    padding-top: 130px;
+    margin: 0px 50px;
+}
+#our-story{
+    background: linear-gradient(0deg, rgba(29, 78, 216, 0.75) 0%, rgba(29, 78, 216, 0.75) 100%), url("../img/office-staff-working.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 0px;
+    color: #fff;
+}
+.story-container h3{
+    font-size: 64px;
+    color: #fff;
+    font-weight: bold;
+}
+.our-story-video img{
+    width: 600px;
+    border-radius: 35px;
+    border: 1.062px solid #F6A114;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

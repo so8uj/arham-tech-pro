@@ -286,75 +286,74 @@
     </section>
 
     <section class="portfolio">
-        <div class="container-fluid">
-            <h2 class="prtfolio-hedding">Recent Case Studies Featured</h2>
+        <div class="slider-section">
+            <div class="d-flex align-items-center slider-items">
+                <div class="col-lg-7">
+                    <div class="slider-details">
+                        <p>Real Estate</p>
+                        <h2>Index</h2>
+                        <h4>Mobile App Design</h4>
+                        <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="slider-image">
+                        <img src="./assets/img/dashboard.png" alt="Portfolio Image">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center slider-items">
+                <div class="col-lg-7">
+                    <div class="slider-details">
+                        <p>Institute</p>
+                        <h2>Urbanistic</h2>
+                        <h4>Web development</h4>
+                        <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="slider-image">
+                        <img src="./assets/img/case-image.png" alt="Portfolio Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="prtfolio-hedding">Recent Case Studies Featured</h2>
+    </section>
 
-            <div class="slider-section">
-                <div class="d-flex align-items-center slider-items">
-                    <div class="col-lg-7">
-                        <div class="slider-details">
-                            <p>Real Estate</p>
-                            <h2>Index</h2>
-                            <h4>Mobile App Design</h4>
-                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
-                        </div>
+    <section id="our-story">
+        <div class="container-fluid">
+            <div class="story-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="mb-5">A business doesn’t get up <br> just in one hand</h3>
                     </div>
                     <div class="col-lg-5">
-                        <div class="slider-image">
-                            <img src="./assets/img/dashboard.png" alt="Portfolio Image">
+                        <p>A successful firm is simple to expand when its people are committed. When employees stick with the company through the good times and the bad, they become an asset. All of our assets are together here</p>
+
+                        <div class="wrapper">
+                            <div class="video-main">
+                              <div class="promo-video">
+                                <div class="waves-block">
+                                  <div class="waves wave-1"></div>
+                                  <div class="waves wave-2"></div>
+                                  <div class="waves wave-3"></div>
+                                </div>
+                              </div>
+                              <a href="https://www.youtube.com/watch?v=BqI0Q7e4kbk" class="video video-popup mfp-iframe" data-lity><i class="fa fa-play"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="our-story-video">
+                            <img src="./assets/img/video-image.png" alt="Video Image">
                         </div>
                     </div>
                 </div>
-                <div class="d-flex align-items-center slider-items">
-                    <div class="col-lg-7">
-                        <div class="slider-details">
-                            <p>Institute</p>
-                            <h2>Urbanistic</h2>
-                            <h4>Web development</h4>
-                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="slider-image">
-                            <img src="./assets/img/case-image.png" alt="Portfolio Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center slider-items">
-                    <div class="col-lg-7">
-                        <div class="slider-details">
-                            <p>Real Estate</p>
-                            <h2>Index</h2>
-                            <h4>Mobile App Design</h4>
-                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="slider-image">
-                            <img src="./assets/img/dashboard.png" alt="Portfolio Image">
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center slider-items">
-                    <div class="col-lg-7">
-                        <div class="slider-details">
-                            <p>Institute</p>
-                            <h2>Urbanistic</h2>
-                            <h4>Web development</h4>
-                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="slider-image">
-                            <img src="./assets/img/case-image.png" alt="Portfolio Image">
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </section>
-
 
     <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
 
@@ -397,7 +396,7 @@
                 if(currentSlide == 0 && deltamain == -1){
                     window.location.href = "#service-section"; 
                 }else if(currentSlide == sliderItems && deltamain == 1){
-                    window.location.href = "#test"; 
+                    window.location.href = "#our-story"; 
                     // alert(currentSlide);
                 }
             });
