@@ -26,6 +26,7 @@ a {
 
 
 body {
+    background: #f7f8f9;
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -61,6 +62,9 @@ body {
 .semi-bold-text{
     font-weight: 600;
 }
+.bold-text{
+    font-weight: 700;
+}
 .button {
     padding: 10px 25px;
     font-size: 16px;
@@ -87,14 +91,36 @@ body {
 }
 .button-a:hover{
     color: #fff;
-    transition: all .3s;
+    transition: .1s;
     cursor: pointer;
 }
 .button-a:hover::before{
     width: 100%;
-    transition: ease .3s;
+    transition: .3s;
     border-radius: 0;
     cursor: pointer;
+}
+.section-header{
+    
+    margin: 40px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 5px; */
+}
+.section-header h3 {
+    font-size: 32px;
+    background: #f7f8f9;
+    padding: 0px 10px;
+}
+.section-header::before {
+    content: '';
+    background: #f6a114;
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    z-index: -1;
 }
 /* ======================= */
 
@@ -242,4 +268,31 @@ body {
 .banner-bottom-box:hover .ovalry-text{
     height: 100%;
     transition: all .3s;
+}
+.about-us-container h2{
+    font-size: 64px;
+    margin-bottom: 60px;
+}
+.about-us-container img{
+    width: 100%;
+}
+.about-description{
+    background: var(--color-a);
+    color: #fff;
+    padding: 25px;
+    padding-left: 45px;
+    border-radius: 80px 0px 0px 80px;
+    font-size: 22px;
+    text-align: left;
+}
+.about-bottom {
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+.about-bottom h4{
+    font-size: 34px;
+}
+.about-bottom img{
+    width: 80%;
+    margin-top: 20px;
 }
