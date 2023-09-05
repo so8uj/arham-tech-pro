@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/lib/fontawesome/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/lib/slick-1.8.1/slick/slick-theme.css">
     
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -161,7 +163,7 @@
 
     <section class="services">
         <div class="container-fluid">
-            <div class="service-container">
+            <div class="service-container" id="service-section">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="service-left" data-aos="zoom-out" data-aos-duration="1000">
@@ -283,11 +285,124 @@
         </div>
     </section>
 
+    <section class="portfolio">
+        <div class="container-fluid">
+            <h2 class="prtfolio-hedding">Recent Case Studies Featured</h2>
+
+            <div class="slider-section">
+                <div class="d-flex align-items-center slider-items">
+                    <div class="col-lg-7">
+                        <div class="slider-details">
+                            <p>Real Estate</p>
+                            <h2>Index</h2>
+                            <h4>Mobile App Design</h4>
+                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="slider-image">
+                            <img src="./assets/img/dashboard.png" alt="Portfolio Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center slider-items">
+                    <div class="col-lg-7">
+                        <div class="slider-details">
+                            <p>Institute</p>
+                            <h2>Urbanistic</h2>
+                            <h4>Web development</h4>
+                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="slider-image">
+                            <img src="./assets/img/case-image.png" alt="Portfolio Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center slider-items">
+                    <div class="col-lg-7">
+                        <div class="slider-details">
+                            <p>Real Estate</p>
+                            <h2>Index</h2>
+                            <h4>Mobile App Design</h4>
+                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="slider-image">
+                            <img src="./assets/img/dashboard.png" alt="Portfolio Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center slider-items">
+                    <div class="col-lg-7">
+                        <div class="slider-details">
+                            <p>Institute</p>
+                            <h2>Urbanistic</h2>
+                            <h4>Web development</h4>
+                            <button  class="button button-a mt-5">See Case Studies <i class="fa fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="slider-image">
+                            <img src="./assets/img/case-image.png" alt="Portfolio Image">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+
+    <section id="test">
+        fff
+    </section>
 
     <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="./assets/lib/slick-1.8.1/slick/slick.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        $(document).ready(function(){
+            const slider = $(".slider-section");
+            var deltamain = 0;
+            slider.slick({
+                dots: true,
+                arrows:false,
+                infinite:false,
+            });
+            slider.on('wheel', (function(e) {
+                e.preventDefault();
+
+                let delta = Math.sign(event.deltaY);
+                if (delta > 0) {
+                    // $(this).slick('slickPrev');
+                    $(this).slick('slickNext');
+                } else {
+                    $(this).slick('slickPrev');
+                }
+                return deltamain = delta;
+                
+            }));
+            $('.slider-section').on('afterChange', function(event, slick, currentSlide){
+                var sliderItems = $(".slider-items").length - 1;
+                // alert (sliderItems+' '+currentSlide);
+                if(sliderItems == -1){
+                    return sliderItems = 0;
+                }
+                if(currentSlide == 0 && deltamain == -1){
+                    window.location.href = "#service-section"; 
+                }else if(currentSlide == sliderItems && deltamain == 1){
+                    window.location.href = "#test"; 
+                    // alert(currentSlide);
+                }
+            });
+            
+        });
     </script>
 
 </body>

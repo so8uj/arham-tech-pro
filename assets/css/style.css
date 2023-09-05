@@ -434,3 +434,43 @@ body {
 .statics-box h5{
     color: #000;
 }
+.portfolio{
+    padding: 30px 0px;
+    background: #000;
+    color: #fff;
+}
+
+.prtfolio-hedding{
+    font-size: 84px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.slider-image img{
+    width: 100%;
+}
+.slider-details h2{
+    font-size: 64px;
+    font-weight: 600;
+}
+.slider-details h4{
+    font-size: 48px;
+    font-weight: 400;
+}
+.slider-details p{
+    position: relative;
+    color:#00F56A;
+    padding-left: 15px;
+}
+.slider-details p::before{
+    width: 10px;
+    height: 10px;
+    content: '';
+    position: absolute;
+    background: #00F56A;
+    border-radius: 50px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
