@@ -100,13 +100,14 @@ body {
     border-radius: 0;
     cursor: pointer;
 }
+
 .section-header{
-    
     margin: 40px 0px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     /* padding: 0px 5px; */
 }
 .section-header h3 {
@@ -121,6 +122,17 @@ body {
     width: 25%;
     height: 3px;
     z-index: -1;
+}
+.section-header.revarse h3{
+    color: var(--color-b);
+    background: #1d4ed8;
+}
+.section-header.revarse.big::before{
+    background: #fff;
+    width: 65%;
+}
+.section-header.revarse::before{
+    background: #fff;
 }
 /* ======================= */
 
@@ -295,4 +307,130 @@ body {
 .about-bottom img{
     width: 80%;
     margin-top: 20px;
+}
+.services{
+    background: var(--color-a);
+    padding: 40px 0px;
+}
+.service-left-header h4{
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+}
+.service-left{
+    position: relative;
+    padding: 60px 30px;
+}
+.top-circle , .left-circle , 
+.bottom-circle , .right-circle{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    z-index: 1;
+    background: var(--color-b);
+    content: '';
+    border-radius: 100%;
+}
+.left-circle{
+    bottom: -40px;
+}
+.right-circle{
+    right: 0;
+}
+.bottom-circle{
+    right: 0;
+    bottom: -40px;
+}
+.service-box{
+    padding: 20px;
+    background: #f7f8f9;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: -1px 2px 1px 2px #f6a114;
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.service-rating {
+    color: #f6a114;
+    margin-bottom: 20px;
+}
+
+.service-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0.1;
+}
+.service-icon i {
+    font-size: 110px;
+}
+.service-infos h4{
+    font-size: 24px;
+    font-weight: bold;
+}
+.service-infos p{
+    font-size: 14px;
+   color: rgba(0, 0, 0, 0.75);
+}
+.service-box:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+.service-box:hover .service-infos p,
+.service-box:hover .service-rating i,
+.service-box:hover .service-infos h4{
+    color: #fff;
+}
+.service-box:hover .service-icon i{
+    font-size: 130px;
+}
+.service-box::before{
+    content: '';
+    background: #f6a114;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 0px 20px 0px 0px;
+}
+.service-box:hover::before{
+    transition: ease .3s;
+    height: 100%;
+    width: 100%;
+}
+.service-box-bottom {
+    background: #f7f8f9;
+    border-radius: 30px;
+    padding: 5px 30px;
+    box-shadow:  0px 1px 1px 1px #f6a114;
+}
+.service-box-bottom h5{
+    margin-bottom: -2px;
+}
+.statics-box{
+    position: relative;
+}
+.statics-box::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 3px;
+    z-index: 1;
+    background: #f6a114;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-45%);
+}
+.last-child::before{
+    width: 0;
+}
+.statics-box h5{
+    color: #000;
 }
