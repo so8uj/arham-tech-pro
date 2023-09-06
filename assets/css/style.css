@@ -668,7 +668,9 @@ i.fa.fa-quote-right.fa-5x.client-quote-icon {
 .review-slider-section .slick-list{
     padding: 0 50px;
 }
-
+.review-slider-section .slick-dots li button:before{
+    color: #1d4ed8;
+}
 .review-left-circle{
     content: '';
     position: absolute;
@@ -752,4 +754,104 @@ i.fa.fa-quote-right.fa-5x.client-quote-icon {
 }
 .clients-items img{
     width: 375px;
+}
+.faq{
+    background: #F1F0EE;
+    padding: 100px 0px;
+}
+.faq h4{
+    font-size: 96px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 80px;
+}
+.accordion-button {
+    font-size: 44px;
+    font-weight: 600;
+}
+.accordion-body {
+    font-size: 36px;
+}
+.accordion-button:not(.collapsed) {
+    color: #1D4ED8;
+    background-color: transparent;  
+    border-bottom: 2px solid #1D4ED8;
+    box-shadow: none; 
+}
+.accordion-button{
+    background-color: transparent;
+    padding: 25px 0px;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-item{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+.accordion-button::after {
+    width: 2.25rem;
+    height: 2.25rem;
+    background-size: 2.25rem;
+}
+.accordion-item:last-child {
+    border-bottom: none !important;
+}
+.main-footer{
+    padding-top: 60px;
+    background: linear-gradient(#1d4ed8eb,#1d4ed8eb),url('../img/footer-globe.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+.footer-box h3{
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+.footer-box h5{
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+.footer-box h6{
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+.footer-box p{
+    font-size: 20px;
+}
+.footer-menu li{
+    margin-bottom: 27px;
+}
+.footer-menu li a{
+    color: #fff;
+}
+.footer-address {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.footer-copy-text{
+    text-align: center;
+    padding: 30px 0px;
+}
+.footer-social-links{
+    margin-top: 60px;
+}
+.footer-social-links ul{
+    display: flex;
+}
+.footer-social-links ul li .socail-icon-container{
+    margin-right: 6px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-links ul li a{
+    color: #fff;
+    font-size: 26px;
 }
