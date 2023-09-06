@@ -331,19 +331,19 @@
                     <div class="col-lg-5">
                         <p>A successful firm is simple to expand when its people are committed. When employees stick with the company through the good times and the bad, they become an asset. All of our assets are together here</p>
 
-                        <div class="wrapper">
-                            <div class="video-main">
-                              <div class="promo-video">
-                                <div class="waves-block">
-                                  <div class="waves wave-1"></div>
-                                  <div class="waves wave-2"></div>
-                                  <div class="waves wave-3"></div>
+                        <div class="video-button-container">
+                            <div class="play-button-wrapper">
+                                <div class="circle pulse"></div>
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                      <polygon points="40,30 65,50 40,70"></polygon>
+                                    </svg>
                                 </div>
-                              </div>
-                              <a href="https://www.youtube.com/watch?v=BqI0Q7e4kbk" class="video video-popup mfp-iframe" data-lity><i class="fa fa-play"></i></a>
                             </div>
-                        </div>
 
+                            <h3 class="color-a">WATCH OUR STORY</h3>
+                        </div>
+    
                     </div>
                     <div class="col-lg-7">
                         <div class="our-story-video">
@@ -355,10 +355,77 @@
         </div>
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br>
+    <section class="review-section">
+        <div class="container-fluid">
+            <h4>TRUSTED PARTNERS</h4>
+            <h2>More then 70+ Brands have trusted us</h2>
+            
+            <div class="review-slider-section">
+                <div class="single-review-box">
+                    <span class="review-left-circle"></span>
+                    <span class="review-right-circle"></span>
+                    <div class="client-image">
+                        <img src="./assets/img/client-1.png" alt="Client Image">
+                    </div>
+                    <div class="client-infos">
+                        <h5>Raul Gil Salvador</h5>
+                        <p>Manager | VALENTO</p>
+                        <span>“ARHAM Techpro Ltd” know how to execute the project/program with maximum label of professionalism, All kind of design & development mostly they support to me, Its really amazing.</span>
+                        <i class="fa fa-quote-right fa-5x client-quote-icon"></i>
+                    </div>
+                </div>
+                <div class="single-review-box">
+                    <span class="review-left-circle"></span>
+                    <span class="review-right-circle"></span>
+                    <div class="client-image">
+                        <img src="./assets/img/client-2.png" alt="Client Image">
+                    </div>
+                    <div class="client-infos">
+                        <h5>Lenka Maláková</h5>
+                        <p>Marketing Coordinator | Avax</p>
+                        <span>ARHAM Techpro Ltd” have the best standards in terms of quality and design & development unit, allowing us to offer the best services at the most workable prices in current world market.</span>
+                        <i class="fa fa-quote-right fa-5x client-quote-icon"></i>
+                    </div>
+                </div>
+                <div class="single-review-box">
+                    <span class="review-left-circle"></span>
+                    <span class="review-right-circle"></span>
+                    <div class="review-item">
+                        <div class="client-image">
+                            <img src="./assets/img/client-3.png" alt="Client Image">
+                        </div>
+                        <div class="client-infos">
+                            <h5>Sylvain LEYMARIE</h5>
+                            <p>President | Treesco</p>
+                            <span>I have been surprised with the turn around from ARHAM Techpro. Super professional & cooperative. True delighted with ARHAM Techpro! I have found he best tech company.</span>
+                            <i class="fa fa-quote-right fa-5x client-quote-icon"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
 
-    <section id="test">
-        fff
+    <section class="our-client-section">
+        <div class="container-fluid">
+            <img src="./assets/img/fav-icon.png" alt="Logo">
+            <div class="client-section-header">
+                <h2>We are proudly associated with</h2>
+            </div>
+            <div class="client-slider">
+                <div class="clients-items">
+                    <img src="./assets/img/ict-division.png" alt="ICT division Image">
+                </div>
+                <div class="clients-items">
+                    <img src="./assets/img/basis.png" alt="Basis">
+                </div>
+                <div class="clients-items">
+                    <img src="./assets/img/bacco.png" alt="Bacco">
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="./assets/lib/jquery/jquery.min.js"></script>
@@ -366,6 +433,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+        $('.review-slider-section').slick({
+            slidesToShow: 2,
+            arrows:false,
+        });
+        $('.client-slider').slick({
+            slidesToShow: 2,
+            arrows:false,
+            dots: true,
+        });
         $(document).ready(function(){
             const slider = $(".slider-section");
             var deltamain = 0;
